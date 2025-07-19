@@ -1,0 +1,229 @@
+:root{
+    --color1:linear-gradient(to right,rgba(230, 157, 11, 0.668),rgba(227, 29, 29, 0.477),rgba(230, 157, 11, 0.668));
+    --color2:linear-gradient(to right,rgba(227, 38, 38, 0.426),rgba(147, 146, 146, 0.701));
+    --color3:rgba(112, 46, 46, 0.726);
+    --color4:rgb(108, 91, 67);
+    --color5:white;
+    --color6:rgba(88, 36, 4, 0.634);
+    --color7:rgb(61, 4, 4);
+    --color8:orange;
+    --color9:ce
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+      background-color: rgb(211, 185, 185);
+}
+#header{
+    background:var(--color5);
+    display:flex;
+   align-items: center;
+   font-family:monospace;
+   text-wrap: nowrap;
+   position: fixed;
+   width: 100%;
+   z-index: 33;
+}
+#header-img{
+    width:80px;
+    height:80px
+}
+#header h1{
+  color:transparent;
+  margin-left:10px ;
+  -webkit-text-stroke: 2px var(--color3);
+  font-size: 40px;
+text-transform: uppercase;
+}
+#nav-bar{
+    margin-left: 20%;
+    font-size: larger;
+}
+#header a{
+    color:rgb(122, 96, 60);
+    font-size: larger;
+    text-decoration: none;
+    padding-left: 20px;
+}
+#header a:hover{
+    background-color: var(--color4);
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+main{
+    position: relative;
+    top:100px;
+    padding-left:30px;
+    color:var(--color7);
+
+}
+#s1 h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    color:var(--color5);
+    -webkit-text-stroke: 1px var(--color6);
+}
+#s1 p{
+    align-content: center;
+}
+#form{
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.182);
+    width:50%;
+    margin:20px auto;
+    vertical-align: center;
+    text-align: center;
+    padding:10px;
+    line-height: 40px;
+   
+}
+input[type=email]{
+    width:300px;
+    height:30px;
+    border-radius: 10px;
+}
+input[type=email]:focus{
+    border-color: red;
+    transform: scale(1.1);
+}
+input[type=submit]{
+    width:250px;
+    height:20px;
+    color:var(--color5);
+    background: var(--color1);
+    border: 0;
+    border-radius: 40px;
+}
+input[type=submit]:hover{
+    font-size:102%;
+    letter-spacing: 2px;
+    border:2px solid var(--color8);
+    height:25px;
+}
+#s2 div{
+margin-left:100px;
+}
+#s2 span{
+    color:white;
+    background-color:var(--color8);
+    font-size: 35px;
+}
+#s2 h2{
+    color: var(--color5);
+    -webkit-text-stroke: 1px  var(--color3);
+}
+iframe{
+    margin:20px 25%;
+    max-width:100%;
+
+}
+#s3{
+display: flex;
+justify-content: center;
+flex-wrap:wrap;
+}
+#s3 > div>h3{
+    background-color: rgba(128, 128, 128, 0.495);
+     border-top-left-radius: 30px;
+     border-top-right-radius: 30px;
+}
+#s3 > div>h3,h2{
+    display: flex;
+    justify-content: center;
+
+}
+#s3 div{
+    background-color: rgba(255, 255, 255, 0.289);
+    margin:10px 20px;
+    border-radius: 30px;
+    width:270px;
+    box-shadow: -1px 1px 1px 1px var(--color6);
+    
+}
+#s3 img{
+width:250px;
+height:150px;
+  border-radius: 30px;
+  margin-left:10px;
+}
+#s3 >div>p{
+  padding:10px;
+ 
+}
+#s3 >div >button{
+    width:80%;
+    height:30px;
+     border-radius: 30px;
+     margin:10px 10%;
+     position:relative;
+     bottom:10px;
+     background: radial-gradient(white,orange);
+     font-family:monospace;
+     font-size: large;
+     font-weight: 600;
+     border: 1px dashed ;
+     box-shadow: -2px 2px black;
+}
+#s3 >div >button:hover{
+    background: radial-gradient(orange,white);
+    
+}
+#s3>div>button:focus{
+    animation:1s botton  ease-in-out ;
+}
+@keyframes botton{
+    from{  background: radial-gradient(white,orange);}
+    to{background: var(--color8)}
+        
+}
+footer{
+    background-color: var(--color7);
+    width:80%;
+    margin:0 auto;
+    border-top-left-radius: 30px;
+     border-top-right-radius: 30px;
+     color: var(--color5);
+     text-align: center;
+     line-height: 20px;
+     padding:10px;
+}
+footer a{
+    color:var(--color4);
+    text-decoration: wavy;
+    -webkit-text-stroke: 2px rgb(220, 198, 198);
+}
+footer a:hover{
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+}
+@media  (max-width:600px) {
+    header,main{
+        font-size:0.6rem;
+        text-wrap: wrap !important;
+    }
+    header h1,h1{
+        font-size:20px !important;
+        margin-left: 2px;
+    }
+  #nav-bar{
+        margin-left:10px !important;
+      
+    }
+    header>nav>a{
+        word-spacing: -4px;
+    }
+    *:not(button,footer,body){
+        margin:0 !important;
+        padding:5px ;
+    }
+    form{
+        width:100% !important;
+    }
+    
+}
